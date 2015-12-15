@@ -1,0 +1,130 @@
+# Site settings
+baseurl = "http://mirdhyn.github.io/inexcelsis/"
+languageCode = "en-us"
+title = "InExcelsis"
+
+[params]
+	name = "InExcelsis"
+	description = "We represent artists in general management and work for them to plan and develop their successful careers. We offer our artists the entire PR and media attendance concept, as well as PR services for music festivals and other art projects."
+	email = "office@inexcelsis.eu"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "InExcelsis"
+		services = "Services"
+		portfolio = "Artists"
+		about = "PR & Media Consulting"
+		contact = "Contact"
+
+	[params.hero]
+		title = "Welcome To InExcelsis!"
+		subtitle = "We provide special services for the culture sector."
+		buttonText = "Tell me more"
+
+
+	# Services section
+	[params.services]
+		title = "Services"
+		subtitle = "We represent artists in general management and work for them to plan and develop their successful careers.<br>We offer our artists the entire PR and media attendance concept, as well as PR services for music festivals and other art projects."
+
+        [[params.services.row]]
+
+            [[params.services.row.list]]
+                icon = "fa-newspaper-o"
+                title = "PR & Media Attendance"
+                description = "<strong>We know journalists.</strong> We identify good media sources, manage media sponsorships and write and distribute press releases and public service announcements."
+
+            [[params.services.row.list]]
+                icon = "fa-calendar"
+                title = "Event Management"
+                description = "<strong>We create unique events.</strong> We provide complete event management services and manage the whole project from the beginning to the very end."
+
+            [[params.services.row.list]]
+                icon = "fa-users"
+                title = "Networking"
+                description = "<strong>We know people.</strong> We collaborate with the international cultural environment in order to fulfill your needs."
+
+	# Portfolio section
+	[params.portfolio]
+		title = "Artists"
+		subtitle = ""
+
+		[params.portfolio.modal]
+            client = "Client"
+            date = "Date"
+            category = "Category"
+            buttonText = "Close"
+
+
+    # About section
+	[params.about]
+		title = "PR and Media Consulting"
+		subtitle = "We’ve already worked with..."
+		endpoint = "Be part<br>of our<br>story!"
+
+		# The events will be listed from the top to the bottom.
+		# All images are stored under 'static/img/about'.
+		# Replace them with your own.
+		[[params.about.events]]
+			img = "strauss.jpg"
+			title = "Richard Strauss Society Poland"
+			description = "<strong>Richard Strauss Society Poland</strong> is the first and the only one Polish society which shows interests in this composer’s works. The organization consists of people having a rich experience in media, culture and science sector. Richard Strauss Society’s activity is supported by its friends from Vienna, Prague, Berlin, Budapest, Rome, London, New York and Warsaw."
+
+		[[params.about.events]]
+			img = "bach.jpg"
+			title = "Świdnica Bach Festival"
+			description = "<strong>Świdnica Bach Festival</strong> represents the most current trends in the world of live classical music performance and attract music lovers as well as the attention of the media. Art, while processing reality, intrigues, moves and opens minds. Open minds are capable of innovation and innovation brings development, progress and prosperity. Music is a form of emotional communication, and concert halls are the temples of the present. Do ut des - I give that you may give – this Roman edict is one of the foundations of our culture, the mechanism that builds communities and shapes society."
+
+		[[params.about.events]]
+			img = "capella.jpg"
+			title = "Capella Cracoviensis"
+			description = "<strong>Capella Cracoviensis</strong> is the most dynamically developing Polish ensemble specialising in historical performance practice. Renowned conductor Jan Tomasz Adamus is the general and artistic director of CC orchestra and choir which has recently performed e.g. in Poland, Germany, France or Austria, presenting both concerts and operas."
+
+	# Contact section
+	[params.contact]
+		title = "Contact us"
+		subtitle  = ""
+		buttonText = "Send message"
+
+		# 'warning' defines error messages for invalid inputs
+		[params.contact.form.name]
+			text = "Your Name *"
+			warning = "Please enter your name."
+
+		[params.contact.form.email]
+			text = "Your Email *"
+			warning = "Please enter your email address."
+
+		[params.contact.form.phone]
+			text = "Your Phone *"
+			warning = "Please enter your phone number."
+
+		[params.contact.form.message]
+			text = "Your Message *"
+			warning = "Please enter a message."
+
+
+	# Footer section
+	[params.footer]
+		copyright = "Published under the Apache License 2.0."
+
+		[[params.footer.social]]
+			icon = "fa-twitter"
+			link = "#"
+
+		[[params.footer.social]]
+			icon = "fa-facebook"
+			link = "#"
+
+		[[params.footer.social]]
+			icon = "fa-linkedin"
+			link = "#"
+
+		[[params.footer.quicklinks]]
+			text = "Privacy Policy"
+			link = "#"
+
+		[[params.footer.quicklinks]]
+			text = "Terms of Use"
+			link = "#"
