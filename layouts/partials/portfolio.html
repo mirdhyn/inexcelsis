@@ -9,17 +9,8 @@
         </div>
         <div class="row">
             {{ range .Site.Data.projects }}
-            <script type="text/javascript">
-            $(document).ready(function() {
-              $("#{{.img}}").click(function(event){
-                mixpanel.track("Artists view", {
-                  "artist": "{{ .title }}"
-                });
-              });
-            });
-            </script>
             <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal{{ .img }}" class="portfolio-link" id="{{.img}}" data-toggle="modal">
+                <a href="#portfolioModal{{.img}}" class="portfolio-link" id="{{.img}}" data-toggle="modal">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
                             <i class="fa fa-plus fa-3x"></i>
@@ -32,6 +23,11 @@
                     <p class="text-muted">{{ .category }}</p>
                 </div>
             </div>
+            <script type="text/javascript">
+              $("#{{.img}}").click(function(event){
+                mixpanel.track("Artists view", { "artist": "{{ .title }}" });
+              });
+            </script>
             {{ end }}
         </div>
     </div>
