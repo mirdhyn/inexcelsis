@@ -19,7 +19,7 @@ title = "InExcelsis"
 
 	[params.hero]
 		title = "Welcome To InExcelsis!"
-		subtitle = "We provide special services for the culture sector."
+		subtitle = "We provide special services for the culture sector"
 		buttonText = "Tell me more"
 
 
