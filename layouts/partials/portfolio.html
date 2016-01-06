@@ -9,6 +9,7 @@
         </div>
         <div class="row">
             {{ range .Site.Data.projects }}
+            {{ if .visible }}
             <div class="col-md-4 col-sm-6 portfolio-item">
                 <a href="#portfolioModal{{.img}}" class="portfolio-link" id="{{.img}}" data-toggle="modal">
                     <div class="portfolio-hover">
@@ -28,6 +29,7 @@
                 mixpanel.track("Artists view", { "artist": "{{ .title }}" });
               });
             </script>
+            {{ end }}
             {{ end }}
         </div>
     </div>
