@@ -9,6 +9,10 @@ body {
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.and {
+  font-family: 'Libre Baskerville', serif !important;
+}
+
 .text-muted {
     color: #777;
 }
@@ -175,12 +179,22 @@ fieldset[disabled] .btn-xl.active {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     color: #df0101;
     font-size: 3em !important;
+    line-height:12px;
+  padding-top:10px;
+  padding-bottom:5px;
 }
-
-
 
 .navbar-default .navbar-brand:hover {
     color: #fec503;
+}
+
+.navbar-brand small {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 15px;
+  color: #fff;
+  display:block;
+  font-size: 0.25em !important;
+  text-align: center;
 }
 
 .navbar-default .navbar-collapse {

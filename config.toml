@@ -12,6 +12,7 @@ title = "InExcelsis"
 	# Navigation
 	[params.navigation]
 		brand = "InExcelsis"
+		subtitle = "Artist Management & PR"
 		services = "Services"
 		portfolio = "Artists"
 		about = "PR & Media Consulting"
