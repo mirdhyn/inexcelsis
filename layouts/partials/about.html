@@ -13,7 +13,7 @@
                     {{ range $i, $e := .Site.Params.about.events }}
                     <li {{ if (not (modBool $i 2)) }}class="timeline-inverted" {{ end }}>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/{{ .img }}" alt="">
+                            <img class="img-circle img-responsive" src="http://res.cloudinary.com/inexcelsis/image/upload/c_fill,g_faces,h_200,w_200/{{.img}}.jpg" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
