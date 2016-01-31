@@ -6,6 +6,7 @@ tar xzvf hugo_0.15_linux_amd64.tar.gz
 
 ./hugo_0.15_linux_amd64/hugo_0.15_linux_amd64
 
+echo "www.inexcelsis.eu" > public/CNAME
 cd public
 git init
 
